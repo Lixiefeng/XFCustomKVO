@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'XFCustomKVO_Example' do
+  pod 'XFCustomKVO', :path => '../'
+
+  target 'XFCustomKVO_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

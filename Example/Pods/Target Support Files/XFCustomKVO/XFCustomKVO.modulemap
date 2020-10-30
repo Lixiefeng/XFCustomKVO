@@ -1,0 +1,6 @@
+framework module XFCustomKVO {
+  umbrella header "XFCustomKVO-umbrella.h"
+
+  export *
+  module * { export * }
+}
