@@ -20,7 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)xf_addObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath block:(XFCustomKVOBlock)block;
 
-
 @end
 
 NS_ASSUME_NONNULL_END

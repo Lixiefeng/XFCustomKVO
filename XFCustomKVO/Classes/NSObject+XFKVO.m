@@ -28,15 +28,25 @@ static NSString *const kXFKVOAssiociateKey = @"kXFKVO_AssiociateKey";
     // 4.保存观察的相关信息
     /**
      * 因为是分类，利用关联属性保存,
-     * 可能存在同时观察多个属性的情况，所以用集合来保存，我们暂且用数组。
+     * 可能存在同时观察多个属性的情况，所以用集合来保存。
      */
     XFKVOInfo *info = [[XFKVOInfo alloc] initWitObserver:observer forKeyPath:keyPath customKVOBlock:block];
-    NSMutableArray *mArray = objc_getAssociatedObject(self, (__bridge const void * _Nonnull)(kXFKVOAssiociateKey));
-    if (!mArray) {
-        mArray = [NSMutableArray arrayWithCapacity:1];
-        objc_setAssociatedObject(self, (__bridge const void * _Nonnull)(kXFKVOAssiociateKey), mArray, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    
+//    // 4.1 数组保存
+//    NSMutableArray *mArray = objc_getAssociatedObject(self, (__bridge const void * _Nonnull)(kXFKVOAssiociateKey));
+//    if (!mArray) {
+//        mArray = [NSMutableArray arrayWithCapacity:1];
+//        objc_setAssociatedObject(self, (__bridge const void * _Nonnull)(kXFKVOAssiociateKey), mArray, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+//    }
+//    [mArray addObject:info];
+    
+    // 4.2 set保存
+    NSMutableSet *set = objc_getAssociatedObject(self, (__bridge const void * _Nonnull)(kXFKVOAssiociateKey));
+    if (!set) {
+        set = [NSMutableSet set];
+        objc_setAssociatedObject(self, (__bridge const void * _Nonnull)(kXFKVOAssiociateKey), set, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
-    [mArray addObject:info];
+    [set addObject:info];
 }
 
 Class xf_class(id self, SEL _cmd) {
@@ -62,11 +72,20 @@ void xf_setter(id self, SEL _cmd, id newValue) {
     // 获取旧值
     id oldValue = [self valueForKey:keyPath];
     
-    NSMutableArray *mArray = objc_getAssociatedObject(self, (__bridge const void * _Nonnull)(kXFKVOAssiociateKey));
-    for (XFKVOInfo *info in mArray) {
-        if ([info.keyPath isEqualToString:keyPath] && info.customKVOBlock) {
-            info.customKVOBlock(info.observer, keyPath, oldValue, newValue);
-        }
+//    // 数组
+//    NSMutableArray *mArray = objc_getAssociatedObject(self, (__bridge const void * _Nonnull)(kXFKVOAssiociateKey));
+//    for (XFKVOInfo *info in mArray) {
+//        if ([info.keyPath isEqualToString:keyPath] && info.customKVOBlock) {
+//            info.customKVOBlock(info.observer, keyPath, oldValue, newValue);
+//        }
+//    }
+    
+    // set
+    NSMutableSet *set = objc_getAssociatedObject(self, (__bridge const void * _Nonnull)(kXFKVOAssiociateKey));
+    XFKVOInfo *tempInfo = [[XFKVOInfo alloc] initWitObserver:nil forKeyPath:keyPath customKVOBlock:nil];
+    XFKVOInfo *targetInfo = [set member:tempInfo];
+    if (targetInfo) {
+        targetInfo.customKVOBlock(targetInfo.observer, keyPath, oldValue, newValue);
     }
 }
 

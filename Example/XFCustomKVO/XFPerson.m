@@ -10,4 +10,13 @@
 
 @implementation XFPerson
 
+- (void)setName:(NSString *)name {
+    NSLog(@"=-=-来到 XFPerson 的setter方法 :%@", name);
+    _name = name;
+}
+
+- (void)dealloc{
+    NSLog(@"%s",__func__);
+}
+
 @end

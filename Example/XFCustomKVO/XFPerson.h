@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-
 @interface XFPerson : NSObject
 
 @property (nonatomic, copy) NSString *name;

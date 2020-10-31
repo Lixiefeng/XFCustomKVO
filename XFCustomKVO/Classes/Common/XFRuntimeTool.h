@@ -13,11 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface XFRuntimeTool : NSObject
 
-/// 根据getter方法名称生成setter方法名称
+/// 根据getter方法名称生成setter方法名称，例如 key --> setKey:
 /// @param getterName getter方法名称
 + (NSString *)xf_setterForGetter:(NSString *)getterName;
 
-/// 根据setter方法名称生成getter方法名称
+/// 根据setter方法名称生成getter方法名称，例如 set<Key>: --> key
 /// @param setterName setter方法名称
 + (NSString *)xf_getterForSetter:(NSString *)setterName;
 

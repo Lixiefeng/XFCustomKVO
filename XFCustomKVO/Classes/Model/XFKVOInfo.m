@@ -18,4 +18,14 @@
     return self;
 }
 
+#pragma mark - set集合时，查找时使用
+- (NSUInteger)hash {
+    return [_keyPath hash];
+}
+
+- (BOOL)isEqual:(id)object {
+    XFKVOInfo *info = (XFKVOInfo *)object;
+    return [self.keyPath isEqualToString:info.keyPath];
+}
+
 @end

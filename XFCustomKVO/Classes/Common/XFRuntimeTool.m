@@ -13,10 +13,11 @@ static NSString *const kXFKVOPrefix = @"XFKVONotifying_";
 @implementation XFRuntimeTool
 
 + (NSString *)xf_setterForGetter:(NSString *)getterName {
-    if (getterName.length <= 0 || ![getterName hasPrefix:@"get"]) return nil;
+    if (getterName.length <= 0)
+        return nil;
+    
     NSString *firstString = [[getterName substringToIndex:1] uppercaseString];
     NSString *leaveString = [getterName substringFromIndex:1];
-    
     return [NSString stringWithFormat:@"set%@%@:",firstString,leaveString];
 }
 
