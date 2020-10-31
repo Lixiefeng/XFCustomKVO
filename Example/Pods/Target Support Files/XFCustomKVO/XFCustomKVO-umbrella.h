@@ -10,6 +10,9 @@
 #endif
 #endif
 
+#import "XFRuntimeTool.h"
+#import "XFKVOInfo.h"
+#import "NSObject+XFKVO.h"
 
 FOUNDATION_EXPORT double XFCustomKVOVersionNumber;
 FOUNDATION_EXPORT const unsigned char XFCustomKVOVersionString[];

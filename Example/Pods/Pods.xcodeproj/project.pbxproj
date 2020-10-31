@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15CF906CE4D215435376C9EC97AA0269 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = B3ACBDBEDA1256427C7419147EE805FA /* ReplaceMe.m */; };
 		2E8F2206BE24817454887D5D1DB876D4 /* Pods-XFCustomKVO_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4E7A688AEE676AE6D3B61493103CA0 /* Pods-XFCustomKVO_Example-dummy.m */; };
+		350026CCFEE0921BAA2D7D88EEE970E1 /* XFKVOInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 74D8C7DB8E2DED07D4E9C7D491D24111 /* XFKVOInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36306CAED076B76A0878D5819114A4C0 /* Pods-XFCustomKVO_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D45C6B6008D4A332D38D38FA60B442 /* Pods-XFCustomKVO_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3980F7DE66BA2738DE955E961877AC9C /* Pods-XFCustomKVO_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F02405BED54F9243F9FEDBE473B4E13 /* Pods-XFCustomKVO_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57B750C5FFD9F8979E71C39ECB257091 /* XFRuntimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D5DE636CBC1801E97D8DB22CAE73A2 /* XFRuntimeTool.m */; };
+		5CA77BADB6FEE88B6D4D4855F64E00C1 /* XFCustomKVO-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB7BAFC82F45EA9DE45456DE230A55F0 /* XFCustomKVO-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69A3628A9E8E2075340481B865C68540 /* XFRuntimeTool.h in Headers */ = {isa = PBXBuildFile; fileRef = F6C044EB3C777DB81AF434160CC20FF1 /* XFRuntimeTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CC7E23E511D07182B5CB0792E6CEB39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		70191E5AC13F98F2CFFF6989E290F060 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7464F52D13A02510804271103B9D15BA /* XFKVOInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 210E2B6E8D52AA0CAB7792D9C59835AE /* XFKVOInfo.m */; };
 		7E5C1D815FC81EA75F32BD0C1B5764FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		83F9882C00BA63C36A753E587EDDA1E9 /* XFCustomKVO-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E9CA9571CF77A161CF462905DE82A78C /* XFCustomKVO-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		898DAC26EA3B3DA7238D8B1D8C307285 /* XFCustomKVO-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 670FE1284E24A4971B16947712933CE7 /* XFCustomKVO-dummy.m */; };
 		A69E91CBAD8F1C8E3B19DA0E99070757 /* Pods-XFCustomKVO_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CE996B5960FC0B31B87D892BBB39B9 /* Pods-XFCustomKVO_Tests-dummy.m */; };
-		B694AF3BD99C8450F349FDCB2ACEBC80 /* XFCustomKVO-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E8E154A2E6A136F3B7A062C0A8A13 /* XFCustomKVO-dummy.m */; };
+		F6773F6D5F4350824BAF25A709E57C4B /* NSObject+XFKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FD398BAB92526443CD5EE61BECBEA /* NSObject+XFKVO.m */; };
+		FE6914B73CB3DA7DF0EE7D7E191011D5 /* NSObject+XFKVO.h in Headers */ = {isa = PBXBuildFile; fileRef = 4709E4565E8F1320C7AFA9BF8EC6626F /* NSObject+XFKVO.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,38 +42,43 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05893FA01195A3673A9FD3FD19F127D5 /* XFCustomKVO.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XFCustomKVO.modulemap; sourceTree = "<group>"; };
 		0E13A63289864630FEC34B1FAD887BD3 /* Pods-XFCustomKVO_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XFCustomKVO_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		10A44568A6FBE7CF77AF18B97782B979 /* Pods-XFCustomKVO_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XFCustomKVO_Example-frameworks.sh"; sourceTree = "<group>"; };
 		127B1AC5B48EB46F07FCC380990BD9C8 /* Pods-XFCustomKVO_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XFCustomKVO_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		13C68FC21CFA3763A5699196D8F3D0F5 /* XFCustomKVO.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XFCustomKVO.modulemap; sourceTree = "<group>"; };
 		1A5A9349349DD869C3BDE5EC437CC744 /* Pods_XFCustomKVO_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XFCustomKVO_Example.framework; path = "Pods-XFCustomKVO_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		20FDCCD30C17EBC02B6024FDE9FDE90D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		210E2B6E8D52AA0CAB7792D9C59835AE /* XFKVOInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFKVOInfo.m; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		34911DBF75D577996EBFB2E7613BAF90 /* Pods-XFCustomKVO_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XFCustomKVO_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3884ED5AA6F2234B264A2DDF81FE97C7 /* Pods_XFCustomKVO_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XFCustomKVO_Tests.framework; path = "Pods-XFCustomKVO_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F02405BED54F9243F9FEDBE473B4E13 /* Pods-XFCustomKVO_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XFCustomKVO_Tests-umbrella.h"; sourceTree = "<group>"; };
-		4B5E8E154A2E6A136F3B7A062C0A8A13 /* XFCustomKVO-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XFCustomKVO-dummy.m"; sourceTree = "<group>"; };
-		4E6E3B548606F403D7DA2C379D38A5D9 /* XFCustomKVO.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XFCustomKVO.xcconfig; sourceTree = "<group>"; };
-		5896BCF02BBE56958C7775D5B8BF6998 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4709E4565E8F1320C7AFA9BF8EC6626F /* NSObject+XFKVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+XFKVO.h"; path = "XFCustomKVO/Classes/NSObject+XFKVO.h"; sourceTree = "<group>"; };
 		59CE996B5960FC0B31B87D892BBB39B9 /* Pods-XFCustomKVO_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XFCustomKVO_Tests-dummy.m"; sourceTree = "<group>"; };
-		6161FDD46C34998717462A03EBAFA32E /* XFCustomKVO.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XFCustomKVO.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		60D5DE636CBC1801E97D8DB22CAE73A2 /* XFRuntimeTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFRuntimeTool.m; sourceTree = "<group>"; };
+		632795199C416FA4A04C642709CA74C8 /* XFCustomKVO.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XFCustomKVO.xcconfig; sourceTree = "<group>"; };
 		64D45C6B6008D4A332D38D38FA60B442 /* Pods-XFCustomKVO_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XFCustomKVO_Example-umbrella.h"; sourceTree = "<group>"; };
-		6C94DEECE69BE37A87E936DD2B5212C1 /* XFCustomKVO-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XFCustomKVO-Info.plist"; sourceTree = "<group>"; };
+		65AFE8B4C04C72F4262BA53331BE98BF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		670FE1284E24A4971B16947712933CE7 /* XFCustomKVO-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XFCustomKVO-dummy.m"; sourceTree = "<group>"; };
+		71391CF048B0226C3BE950CE0104796C /* XFCustomKVO-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XFCustomKVO-prefix.pch"; sourceTree = "<group>"; };
+		74D8C7DB8E2DED07D4E9C7D491D24111 /* XFKVOInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFKVOInfo.h; sourceTree = "<group>"; };
 		7A298DD33505BCD0332CF2B34E947A12 /* Pods-XFCustomKVO_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XFCustomKVO_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B7FD398BAB92526443CD5EE61BECBEA /* NSObject+XFKVO.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+XFKVO.m"; path = "XFCustomKVO/Classes/NSObject+XFKVO.m"; sourceTree = "<group>"; };
 		7BDE89A9DD88EFDD6BCF89C70D482B6E /* Pods-XFCustomKVO_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XFCustomKVO_Example-Info.plist"; sourceTree = "<group>"; };
+		7CB5636BABCDDB08AF32A67C384BBE0B /* XFCustomKVO-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XFCustomKVO-Info.plist"; sourceTree = "<group>"; };
 		800E75059ABC6E3DA1E2B0263C1D5DB6 /* Pods-XFCustomKVO_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XFCustomKVO_Tests-Info.plist"; sourceTree = "<group>"; };
 		82A74FD97428BE69B78C2364B48A5684 /* Pods-XFCustomKVO_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XFCustomKVO_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AED97C3036EAFA293DD45EC848798697 /* XFCustomKVO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XFCustomKVO.framework; path = XFCustomKVO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3ACBDBEDA1256427C7419147EE805FA /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = XFCustomKVO/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		C2BC7B184626EACFFC63AB3A6BCA42B8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		C4AFE69ECD58CB1E630D8ADAAB5776CA /* Pods-XFCustomKVO_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XFCustomKVO_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		CB5F4A9F034BADDA81D15334D5F31C17 /* Pods-XFCustomKVO_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XFCustomKVO_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CC5344AF1C256BB6073F4F773847067E /* Pods-XFCustomKVO_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XFCustomKVO_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DB7BAFC82F45EA9DE45456DE230A55F0 /* XFCustomKVO-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XFCustomKVO-umbrella.h"; sourceTree = "<group>"; };
 		DC4E7A688AEE676AE6D3B61493103CA0 /* Pods-XFCustomKVO_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XFCustomKVO_Example-dummy.m"; sourceTree = "<group>"; };
-		DCEE05F1D51B181267B26F6F0EC96316 /* XFCustomKVO-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XFCustomKVO-prefix.pch"; sourceTree = "<group>"; };
 		E2669FEEFADEE78A337FB83E1217741C /* Pods-XFCustomKVO_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XFCustomKVO_Example.modulemap"; sourceTree = "<group>"; };
 		E4C648A832F73E8F294B78DD1751EB6B /* Pods-XFCustomKVO_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XFCustomKVO_Tests.modulemap"; sourceTree = "<group>"; };
-		E9CA9571CF77A161CF462905DE82A78C /* XFCustomKVO-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XFCustomKVO-umbrella.h"; sourceTree = "<group>"; };
+		F6C044EB3C777DB81AF434160CC20FF1 /* XFRuntimeTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFRuntimeTool.h; sourceTree = "<group>"; };
+		FB902C9733448511A1EEB9C441C33CAE /* XFCustomKVO.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XFCustomKVO.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		194E0A3DCD291D99361F9EA7B312699D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74D8C7DB8E2DED07D4E9C7D491D24111 /* XFKVOInfo.h */,
+				210E2B6E8D52AA0CAB7792D9C59835AE /* XFKVOInfo.m */,
+			);
+			name = Model;
+			path = XFCustomKVO/Classes/Model;
+			sourceTree = "<group>";
+		};
 		2039896B0217B0F47E04E826278FB216 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +127,38 @@
 				AED97C3036EAFA293DD45EC848798697 /* XFCustomKVO.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2C6437B4DD4F56200C9D34183CB453F8 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C2BC7B184626EACFFC63AB3A6BCA42B8 /* LICENSE */,
+				65AFE8B4C04C72F4262BA53331BE98BF /* README.md */,
+				FB902C9733448511A1EEB9C441C33CAE /* XFCustomKVO.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		396A1B19A04D18285F00EFE842273829 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				05893FA01195A3673A9FD3FD19F127D5 /* XFCustomKVO.modulemap */,
+				632795199C416FA4A04C642709CA74C8 /* XFCustomKVO.xcconfig */,
+				670FE1284E24A4971B16947712933CE7 /* XFCustomKVO-dummy.m */,
+				7CB5636BABCDDB08AF32A67C384BBE0B /* XFCustomKVO-Info.plist */,
+				71391CF048B0226C3BE950CE0104796C /* XFCustomKVO-prefix.pch */,
+				DB7BAFC82F45EA9DE45456DE230A55F0 /* XFCustomKVO-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/XFCustomKVO";
+			sourceTree = "<group>";
+		};
+		3F8411FDE6913D4F344FC3907101880E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF193C7CBA704C2EFE7617F5109168C3 /* XFCustomKVO */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		4326A6230B373E813AF051CC522A191E /* Pods-XFCustomKVO_Example */ = {
@@ -126,14 +178,6 @@
 			path = "Target Support Files/Pods-XFCustomKVO_Example";
 			sourceTree = "<group>";
 		};
-		481F026B01FF1D71905C1F715DC9007F /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				78BB23F59FED665292D70BAAD92207E7 /* XFCustomKVO */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		7294F04FCED6ADC72A9FF8C48EB1B16A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,17 +185,6 @@
 				8584F577E40F70814ECB43886DAF8E8A /* Pods-XFCustomKVO_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		78BB23F59FED665292D70BAAD92207E7 /* XFCustomKVO */ = {
-			isa = PBXGroup;
-			children = (
-				B3ACBDBEDA1256427C7419147EE805FA /* ReplaceMe.m */,
-				AACAF761146BD826D95C5DAF45CAA98F /* Pod */,
-				9C9FCE4B4053C4EF20428E54576C4980 /* Support Files */,
-			);
-			name = XFCustomKVO;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		8584F577E40F70814ECB43886DAF8E8A /* Pods-XFCustomKVO_Tests */ = {
@@ -170,28 +203,18 @@
 			path = "Target Support Files/Pods-XFCustomKVO_Tests";
 			sourceTree = "<group>";
 		};
-		9C9FCE4B4053C4EF20428E54576C4980 /* Support Files */ = {
+		BF193C7CBA704C2EFE7617F5109168C3 /* XFCustomKVO */ = {
 			isa = PBXGroup;
 			children = (
-				13C68FC21CFA3763A5699196D8F3D0F5 /* XFCustomKVO.modulemap */,
-				4E6E3B548606F403D7DA2C379D38A5D9 /* XFCustomKVO.xcconfig */,
-				4B5E8E154A2E6A136F3B7A062C0A8A13 /* XFCustomKVO-dummy.m */,
-				6C94DEECE69BE37A87E936DD2B5212C1 /* XFCustomKVO-Info.plist */,
-				DCEE05F1D51B181267B26F6F0EC96316 /* XFCustomKVO-prefix.pch */,
-				E9CA9571CF77A161CF462905DE82A78C /* XFCustomKVO-umbrella.h */,
+				4709E4565E8F1320C7AFA9BF8EC6626F /* NSObject+XFKVO.h */,
+				7B7FD398BAB92526443CD5EE61BECBEA /* NSObject+XFKVO.m */,
+				FABDB3B7802BE8D4C5D938D652CD6CB5 /* Common */,
+				194E0A3DCD291D99361F9EA7B312699D /* Model */,
+				2C6437B4DD4F56200C9D34183CB453F8 /* Pod */,
+				396A1B19A04D18285F00EFE842273829 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/XFCustomKVO";
-			sourceTree = "<group>";
-		};
-		AACAF761146BD826D95C5DAF45CAA98F /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				20FDCCD30C17EBC02B6024FDE9FDE90D /* LICENSE */,
-				5896BCF02BBE56958C7775D5B8BF6998 /* README.md */,
-				6161FDD46C34998717462A03EBAFA32E /* XFCustomKVO.podspec */,
-			);
-			name = Pod;
+			name = XFCustomKVO;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -206,7 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				481F026B01FF1D71905C1F715DC9007F /* Development Pods */,
+				3F8411FDE6913D4F344FC3907101880E /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				2039896B0217B0F47E04E826278FB216 /* Products */,
 				7294F04FCED6ADC72A9FF8C48EB1B16A /* Targets Support Files */,
@@ -221,6 +244,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FABDB3B7802BE8D4C5D938D652CD6CB5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F6C044EB3C777DB81AF434160CC20FF1 /* XFRuntimeTool.h */,
+				60D5DE636CBC1801E97D8DB22CAE73A2 /* XFRuntimeTool.m */,
+			);
+			name = Common;
+			path = XFCustomKVO/Classes/Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -232,11 +265,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B95F2F9A151898129E9F05471AB9B83E /* Headers */ = {
+		69E0B7EBD108F1BCAF0F36E5EF092E92 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83F9882C00BA63C36A753E587EDDA1E9 /* XFCustomKVO-umbrella.h in Headers */,
+				FE6914B73CB3DA7DF0EE7D7E191011D5 /* NSObject+XFKVO.h in Headers */,
+				5CA77BADB6FEE88B6D4D4855F64E00C1 /* XFCustomKVO-umbrella.h in Headers */,
+				350026CCFEE0921BAA2D7D88EEE970E1 /* XFKVOInfo.h in Headers */,
+				69A3628A9E8E2075340481B865C68540 /* XFRuntimeTool.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,8 +291,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9697E20B2F6566338D302B5E9A5E6B03 /* Build configuration list for PBXNativeTarget "XFCustomKVO" */;
 			buildPhases = (
-				B95F2F9A151898129E9F05471AB9B83E /* Headers */,
-				1FF47BC99CDF68B45BC826CB31E02F7B /* Sources */,
+				69E0B7EBD108F1BCAF0F36E5EF092E92 /* Headers */,
+				418CAC4B4510A5E9125BE0A986156F63 /* Sources */,
 				C8AF884AFFD9B9A09BEC84565740D6EE /* Frameworks */,
 				19243AE668A3C2D1ACBB153C12D4BF89 /* Resources */,
 			);
@@ -369,12 +405,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1FF47BC99CDF68B45BC826CB31E02F7B /* Sources */ = {
+		418CAC4B4510A5E9125BE0A986156F63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15CF906CE4D215435376C9EC97AA0269 /* ReplaceMe.m in Sources */,
-				B694AF3BD99C8450F349FDCB2ACEBC80 /* XFCustomKVO-dummy.m in Sources */,
+				F6773F6D5F4350824BAF25A709E57C4B /* NSObject+XFKVO.m in Sources */,
+				898DAC26EA3B3DA7238D8B1D8C307285 /* XFCustomKVO-dummy.m in Sources */,
+				7464F52D13A02510804271103B9D15BA /* XFKVOInfo.m in Sources */,
+				57B750C5FFD9F8979E71C39ECB257091 /* XFRuntimeTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,7 +668,7 @@
 		};
 		989DABDE933FE86A3BC3231762D55FB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E6E3B548606F403D7DA2C379D38A5D9 /* XFCustomKVO.xcconfig */;
+			baseConfigurationReference = 632795199C416FA4A04C642709CA74C8 /* XFCustomKVO.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -661,7 +699,7 @@
 		};
 		B8AEF1BE522D7095532F78985E5455DB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E6E3B548606F403D7DA2C379D38A5D9 /* XFCustomKVO.xcconfig */;
+			baseConfigurationReference = 632795199C416FA4A04C642709CA74C8 /* XFCustomKVO.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
